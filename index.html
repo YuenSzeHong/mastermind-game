@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Mastermind</h1>
+      <div id="timer" class="timer">Time:</div>
+    </header>
+    <div class="gameplay" id="Game">
+      <div class="row">
+        <div class="input" id="input">
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+        </div>
+        <div class="spacing"></div>
+        <div class="result" id="result">
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="input" class="input-container">
+        <div class="i pin red" draggable="true"></div>
+        <div class="i pin orange" draggable="true"></div>
+        <div class="i pin yellow" draggable="true"></div>
+        <div class="i pin green" draggable="true"></div>
+        <div class="i pin lime" draggable="true"></div>
+        <div class="i pin blue" draggable="true"></div>
+        <div class="i pin purple" draggable="true"></div>
+      </div>
+      <div class="spacing"></div>
+      <button id="done">Done</button>
+    </footer>
+  </body>
+</html>

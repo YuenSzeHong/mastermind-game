@@ -1,0 +1,189 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    counter-reset: trial;
+    overflow: hidden;
+    height: 100%;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.timer {
+    font-size: 1.5rem;
+}
+
+header {
+    width: 100vw;
+    height: fit-content;
+    background-color: aqua;
+    align-items: center;
+}
+
+footer {
+    width: 100vw;
+    height: fit-content;
+    background-color: aqua;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.gameplay { 
+    width: 100vw;
+    height: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+.row {
+    height: fit-content;
+    width: 100vw;
+    background-color: rgb(127, 240, 255);
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    counter-increment: trial;
+    overflow: auto;
+}
+
+.row::before {
+    content: counter(trial);
+    font-size: 1rem;
+}
+
+.row::after {
+    display: none;
+}
+
+.input {
+    width: auto;
+    height: fit-content;
+    padding-right: auto;
+    display: inline-flex;
+    vertical-align: center;
+}
+
+.spacing {
+    width: 80%
+}
+
+.result {
+    flex: 1;
+    height: auto;
+    display: flex;
+}
+
+.result > .pin {
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+
+.result div:nth-child(even) {
+    margin-top: .1rem;
+}
+
+.result div:nth-child(odd) {
+    margin-bottom: .1rem;
+}
+
+@media screen and (min-width: 500px) {
+    footer {
+        flex-direction: row;
+    }
+
+    .pin {
+        width: auto;
+        height: auto;
+    }
+}
+
+.pin {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 10px;
+    margin: .5rem;
+    background-color: transparent;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color:orange;
+}
+
+.yellow {
+    background-color:yellow;
+}
+
+.green {
+    background-color:green;
+}
+
+.lime {
+    background-color:lime;
+}
+
+.blue {
+    background-color:blue;
+}
+
+.purple {
+    background-color:purple;
+}
+
+.color {
+    background-color: white;
+}
+
+.pos {
+    background-color: black;
+}
+
+.input-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+}
+
+#done {
+    padding: .5rem;
+    left:0;
+    background-color: lime;
+    border: none;
+    color: white;
+    font-weight: thin;
+    display: inline-block;
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+#done:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.input>.pin:hover,.input-container>.pin:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
