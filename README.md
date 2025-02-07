@@ -40,7 +40,7 @@ I plan to make further enhancements and refactor the codebase based on the knowl
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE) (or replace with the appropriate license).
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 ## Attribution
 
